@@ -19,7 +19,7 @@ def graph(date):
     if hst == 'raspberrypi\n':
         file = open('/mnt/Public/speed/{}-speed.log'.format(date), 'r').readlines()
     else:
-        file = open('/Volumes/Public/speed/{}-speed.log'.format(date), 'r').readlines()
+        file = open('/root/Scripts/speed/logs/{}-speed.log'.format(date), 'r').readlines()
     for line in file:
         if not len(line) < 5:
             N = N + 1
